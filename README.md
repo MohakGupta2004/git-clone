@@ -9,4 +9,6 @@ created by git for God's sake. Also I've changed my Makefile from ./bin to bin. 
 # Third commit 
 Finally modularized this shit a little bit. Doing the same shit as before but hey hey why not?
 
+# Fourth commit 
+My bad for writing everything in the header file. MY FAULT YEAHHHH FINEEEEEEEEEEEEEE
 
