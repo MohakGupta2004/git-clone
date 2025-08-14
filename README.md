@@ -6,4 +6,7 @@ FUCK MY LIFE
 Fuck this, now I've to think about how can I push this to github????????? Like nigga how can I push my own .git to github it's thinking it's 
 created by git for God's sake. Also I've changed my Makefile from ./bin to bin. Now this bitch ass git is also my native program. Ahh fuck you my junior dev ass
 
+# Third commit 
+Finally modularized this shit a little bit. Doing the same shit as before but hey hey why not?
+
 

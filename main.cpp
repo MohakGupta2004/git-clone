@@ -1,4 +1,4 @@
-#include <filesystem>
+#include "src/commands.h"
 #include <fstream>
 #include <iostream>
 int main(int argc, char *argv[]) {
@@ -9,20 +9,9 @@ int main(int argc, char *argv[]) {
 
   std::string command = argv[1];
   std::ofstream outputFile;
+  Commands commands(outputFile);
   if (command == "init") {
-    try {
-      std::filesystem::create_directory(".git");
-      std::filesystem::create_directory(".git/objects");
-      std::filesystem::create_directory(".git/refs");
-      std::filesystem::create_directory(".git/refs/heads");
-      outputFile.open(".git/HEAD");
-      if (outputFile.is_open()) {
-        std::cout << "initializing git repository" << std::endl;
-        outputFile << "ref: refs/heads/master" << std::endl;
-      }
-    } catch (const std::exception &e) {
-      std::cerr << e.what() << std::endl;
-    }
+    commands.initialize();
   } else {
     std::cout << "Unknown command: " << command << std::endl;
   }
